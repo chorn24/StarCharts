@@ -1,0 +1,16 @@
+{% extends "base2.html" %}
+{% load widget_tweaks %}
+{% block content %}
+<div class="TextBubble2">
+    <h3>Explorer Sign Up</h3>
+    <form method="POST" action="">
+    {% csrf_token %}
+    <h4>Name:<h4>
+    <input type="text" name="name" class="Input_">
+    <h4>Password:<h4>
+        <input type="text" name="Password" class="Input_">
+    <br><br>
+    <input type="submit" name="CreateUser">
+    </form>
+</div>
+{% endblock content%}

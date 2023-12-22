@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="Seperate">
+    <div class="TextBubble">
+        <h2>Sign In!</h2>
+        <a href="{% url "LOGIN_DOCUMENTER" %}"><button class="LogReg_Buttons">Sign in as a Documenter!</button></a>
+        <br><br><br>
+        <a href="{% url "LOGIN_EXPLORER" %}"><button class="LogReg_Buttons">Sign in as a Explorer!</button></a>
+    </div>
+    <div class="TextBubble">
+        <h2>Register!</h2>
+        <a href="{% url "REGISTER_DOCUMENTER" %}"><button class="LogReg_Buttons">Sign up as a Documenter!</button></a>
+        <br><br><br>
+        <a href="{% url "REGISTER_EXPLORER" %}"><button class="LogReg_Buttons">Sign up as a Explorer!</button></a>
+    </div>
+</div>
+{% endblock content%}

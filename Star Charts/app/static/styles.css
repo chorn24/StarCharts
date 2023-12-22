@@ -1,0 +1,214 @@
+.silly {
+    background-image: url("images/turned\ off\ computer\ screen\,\ inside\ spaceship\,\ spaceship\ computer\,\ computer\ scree\ s-1144429411.png");
+    background-size: cover;
+}
+
+
+.STool {
+    border: solid 3pt black;
+}
+
+.Seperate {
+    height: 98%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.Input_ {
+    text-align: center;
+    color: white;
+    background-color: rgb(10, 23, 18);
+    font-size: 20pt;
+    border: cyan 2pt dashed;
+}
+
+.Outer {
+    --b: 5px;   /* thickness of the border */
+    --c: Cyan;   /* color of the border */
+    --w: 50pt;  /* width of border */
+    
+  
+    border: var(--b) solid #0000; /* space for the border */
+    --_g: #0000 90deg,var(--c) 0;
+    --_p: var(--w) var(--w) border-box no-repeat;
+    background:
+      conic-gradient(from 90deg  at top    var(--b) left  var(--b),var(--_g)) 0    0    / var(--_p),
+      conic-gradient(from 180deg at top    var(--b) right var(--b),var(--_g)) 100% 0    / var(--_p),
+      conic-gradient(from 0deg   at bottom var(--b) left  var(--b),var(--_g)) 0    100% / var(--_p),
+      conic-gradient(from -90deg at bottom var(--b) right var(--b),var(--_g)) 100% 100% / var(--_p);
+
+
+    background-color: rgba(72, 165, 165, 0.322);
+    width: 80%;
+    height: 300pt;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.Outer2 {
+    --b: 5px;   /* thickness of the border */
+    --c: Cyan;   /* color of the border */
+    --w: 50pt;  /* width of border */
+    
+  
+    border: var(--b) solid #0000; /* space for the border */
+    --_g: #0000 90deg,var(--c) 0;
+    --_p: var(--w) var(--w) border-box no-repeat;
+    background:
+      conic-gradient(from 90deg  at top    var(--b) left  var(--b),var(--_g)) 0    0    / var(--_p),
+      conic-gradient(from 180deg at top    var(--b) right var(--b),var(--_g)) 100% 0    / var(--_p),
+      conic-gradient(from 0deg   at bottom var(--b) left  var(--b),var(--_g)) 0    100% / var(--_p),
+      conic-gradient(from -90deg at bottom var(--b) right var(--b),var(--_g)) 100% 100% / var(--_p);
+
+
+    background-color: rgba(72, 165, 165, 0.322);
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
+
+
+.Outer3 {
+    --b: 5px;   /* thickness of the border */
+    --c: Cyan;   /* color of the border */
+    --w: 50pt;  /* width of border */
+    
+  
+    border: var(--b) solid #0000; /* space for the border */
+    --_g: #0000 90deg,var(--c) 0;
+    --_p: var(--w) var(--w) border-box no-repeat;
+    background:
+      conic-gradient(from 90deg  at top    var(--b) left  var(--b),var(--_g)) 0    0    / var(--_p),
+      conic-gradient(from 180deg at top    var(--b) right var(--b),var(--_g)) 100% 0    / var(--_p),
+      conic-gradient(from 0deg   at bottom var(--b) left  var(--b),var(--_g)) 0    100% / var(--_p),
+      conic-gradient(from -90deg at bottom var(--b) right var(--b),var(--_g)) 100% 100% / var(--_p);
+
+
+    background-color: rgba(72, 165, 165, 0.322);
+    width: 80%;
+    height: 700pt;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
+
+.Inner {
+    border: 1px solid rgb(20, 255, 255);
+    background-color: rgba(69, 230, 230, 0.322);
+    width: 90%;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Inner2 {
+    display: flex;
+    justify-content: center;
+    margin: 5pt;
+    border: 1px solid rgb(20, 255, 255);
+    background-color: rgba(69, 230, 230, 0.322);
+    width: 90%;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.Inner3 {
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgb(20, 255, 255);
+    background-color: rgba(69, 230, 230, 0.322);
+    width: 90%;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.TextBubble {
+    text-align: center;
+    border: solid 2pt rgb(20, 255, 255);
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300pt;
+    height: 150pt;
+    background: rgb(2, 36, 36);
+    padding: 5pt;
+    margin: 5pt;
+    border-radius: 20pt;
+}
+
+.TextBubble2 {
+    text-align: center;
+    border: solid 2pt rgb(20, 255, 255);
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    background: rgb(2, 36, 36);
+    padding: 5pt;
+    margin: 5pt;
+    border-radius: 20pt;
+}
+
+
+.TextBubble3 {
+    border: solid 2pt rgb(20, 255, 255);
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    background: rgb(2, 36, 36);
+    padding: 5pt;
+    border-radius: 20pt;
+}
+
+.LogReg_Buttons {
+    border-radius: 5pt;
+    text-align: center;
+    height: 30pt;
+    width: 100pt;
+    border: 1px solid grey;
+    background-color: rgb(10, 23, 18);
+    color:white;
+    text-shadow: 0pt 0pt 5pt cyan;
+}
+
+
+.LogReg_Buttons:hover {
+    cursor: pointer;
+    border: 3px solid grey;
+    background-color: rgb(2, 4, 3);
+    color:white;
+    text-shadow: 0pt 0pt 5pt cyan 0pt 0pt 5pt rgb(184, 255, 255);
+}
+
+.LogReg_Buttons1 {
+    border-radius: 5pt;
+    text-align: center;
+    height: 30pt;
+    width: 100pt;
+    border: 1px solid grey;
+    background-color: rgb(10, 23, 18);
+    color:white;
+    box-shadow: 0pt 0pt 5pt cyan;
+}
+
+
+.LogReg_Buttons1:hover {
+    cursor: pointer;
+    border: 3px solid grey;
+    background-color: rgb(2, 4, 3);
+    color:white;
+    box-shadow: 0pt 0pt 5pt cyan 0pt 0pt 5pt rgb(184, 255, 255);
+}
