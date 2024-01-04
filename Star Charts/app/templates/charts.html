@@ -1,6 +1,12 @@
 {% extends "base2.html" %}
 {% block content %}
-                <div class="TextBubble2">
+                <div class="TextBubble2-No_Align">
+                    <div class="testing">
+                        <h4>Welcome, {{request.user}}!</h4>
+                        <text><a>Sign out?</a></text>
+                    </div>
+                    <div class="Center-Align">
                     <p>testing!!</p>
+                    </div>
                 </div>
 {% endblock content %}

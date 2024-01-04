@@ -2,22 +2,26 @@
 {% load widget_tweaks %}
 {% block content %}
                 <div class="TextBubble2">
+                    <br>
+                    <div class="HomeDiv">
+                        <a href="{% url "Front" %}"><button class="HomeButton">Home</button></a>
+                    </div>
                     <h3>Documenter Sign Up</h3>
-                    <form method="POST" action="">
+                    <form method="POST" action="{% url "REGISTER_DOCUMENTER" %}">
                     {% csrf_token %}
                     <h4>Name:<h4>
-                    {% render_field form.name class="Input_" %}
+                    {% render_field form.username class="Input_" %}
                     <h4>Password:<h4>
-                    {% render_field form.password class="Input_" %}
+                        <p>Password must be 8 characters or more and cant be entirely numbers</p>
+                    {% render_field form.password1 class="Input_" %}
                     <h4>Repeat Password:<h4>
-                    {% render_field form.password_repeat class="Input_" %}
-                    <h4>Documenter ID:<h4>
-                    {% render_field form.document_id class="Input_" %}
+                    {% render_field form.password2 class="Input_" %}
                     <br><br>
                     <input type="submit" name="CreateUser">
                     {% if form.errors %}
                     <p>Password and Repeat Password do not match!</p>
                     {% endif %}
+                    
                     </form>
                 </div>
 {% endblock content %}

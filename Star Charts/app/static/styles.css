@@ -1,8 +1,42 @@
 .silly {
     background-image: url("images/turned\ off\ computer\ screen\,\ inside\ spaceship\,\ spaceship\ computer\,\ computer\ scree\ s-1144429411.png");
     background-size: cover;
+    font-family: Cascadia Code;
 }
 
+.HomeButton {
+    background-color: rgb(23, 51, 63);
+    color: white;
+    border: solid 1pt cyan;
+    width: 40pt;
+}
+
+.HomeButton:hover {
+    background-color: rgb(7, 16, 20);
+    cursor:pointer;
+}
+
+.HomeDiv {
+    width: 60pt;
+    text-align: center;
+}
+
+.Left_Align {
+    text-align: left;
+}
+
+.Right-Align {
+    text-align: right;
+}
+
+.Center-Align {
+    text-align: center;
+}
+
+.testing {
+    display: flex;
+    justify-content: flex-end;
+}
 
 .STool {
     border: solid 3pt black;
@@ -161,6 +195,17 @@
     border-radius: 20pt;
 }
 
+.TextBubble2-No_Align {
+    border: solid 2pt rgb(20, 255, 255);
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    background: rgb(2, 36, 36);
+    padding: 5pt;
+    margin: 5pt;
+    border-radius: 20pt;
+}
 
 .TextBubble3 {
     border: solid 2pt rgb(20, 255, 255);
@@ -176,8 +221,8 @@
 .LogReg_Buttons {
     border-radius: 5pt;
     text-align: center;
-    height: 30pt;
-    width: 100pt;
+    height: 50pt;
+    width: 150pt;
     border: 1px solid grey;
     background-color: rgb(10, 23, 18);
     color:white;

@@ -23,7 +23,7 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("",front_page,name="Front"),
     path("register/documenter",Register_documenter,name="REGISTER_DOCUMENTER"),
-    path("register/explorer",Register_explorer,name="REGISTER_EXPLORER"),
     path("login/documenter",Login_documenter,name="LOGIN_DOCUMENTER"),
-    path("login/explorer",Login_explorer,name="LOGIN_EXPLORER"),
+    path("charts/directory",Chart_D,name="CHARTS_D"),
+    path("logout",logout_user,name="LOGOUT")
 ]
