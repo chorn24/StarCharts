@@ -1,7 +1,40 @@
+
+.TestingFont {
+    font-family: monospace;
+}
+
+.GoodRating {
+    color: rgb(0, 174, 0);
+}
+
+.OkRating {
+    color: rgb(231, 131, 0);
+}
+
+.BadRating {
+    color: rgb(197, 0, 0);
+}
+
 .silly {
     background-image: url("images/turned\ off\ computer\ screen\,\ inside\ spaceship\,\ spaceship\ computer\,\ computer\ scree\ s-1144429411.png");
     background-size: cover;
-    font-family: Cascadia Code;
+    font-family: monospace;
+}
+
+.LogoutLink:visited {
+    color: rgb(0, 167, 167);
+}
+
+.LogoutLink:hover {
+    color: rgb(96, 255, 255);
+}
+
+.LogoutLink:link {
+    color: cyan;
+}
+
+.Bruh {
+    display:flex;
 }
 
 .HomeButton {
@@ -11,7 +44,21 @@
     width: 40pt;
 }
 
+.HomeButton1 {
+    margin: 5pt;
+    background-color: rgb(23, 51, 63);
+    color: white;
+    border: solid 1pt cyan;
+    width: 60pt;
+    height: 25pt;
+}
+
 .HomeButton:hover {
+    background-color: rgb(7, 16, 20);
+    cursor:pointer;
+}
+
+.HomeButton1:hover {
     background-color: rgb(7, 16, 20);
     cursor:pointer;
 }
@@ -49,6 +96,15 @@
     align-items: center;
 }
 
+.Divorce {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Flex {
+    display: flex;
+    justify-content: center;
+}
 
 .Input_ {
     text-align: center;
@@ -76,7 +132,7 @@
 
     background-color: rgba(72, 165, 165, 0.322);
     width: 80%;
-    height: 300pt;
+    height: 400pt;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -135,7 +191,25 @@
     align-items: center;
 }
 
+
+.Wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .Inner {
+    border: 1px solid rgb(20, 255, 255);
+    background-color: rgba(69, 230, 230, 0.322);
+    width: 90%;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-y:scroll;
+    scrollbar-color: light;
+}
+
+.InnerNoBar {
     border: 1px solid rgb(20, 255, 255);
     background-color: rgba(69, 230, 230, 0.322);
     width: 90%;
@@ -218,6 +292,20 @@
     border-radius: 20pt;
 }
 
+.TextBubble4 {
+    width: 150pt;
+    text-align: center;
+    border: solid 2pt rgb(20, 255, 255);
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgb(2, 36, 36);
+    padding: 5pt;
+    margin: 5pt;
+    border-radius: 20pt;
+}
+
+
 .LogReg_Buttons {
     border-radius: 5pt;
     text-align: center;
@@ -256,4 +344,30 @@
     background-color: rgb(2, 4, 3);
     color:white;
     box-shadow: 0pt 0pt 5pt cyan 0pt 0pt 5pt rgb(184, 255, 255);
+}
+
+.LogReg_Buttons2 {
+    border-radius: 5pt;
+    text-align: center;
+    height: 50pt;
+    width: 150pt;
+    border: 1px solid grey;
+    background-color: rgb(10, 23, 18);
+    color:white;
+    box-shadow: 0pt 0pt 5pt cyan;
+}
+
+
+.LogReg_Buttons2:hover {
+    cursor: pointer;
+    border: 3px solid grey;
+    background-color: rgb(2, 4, 3);
+    color:white;
+    box-shadow: 0pt 0pt 5pt cyan 0pt 0pt 5pt rgb(184, 255, 255);
+}
+
+.LogReg_Buttons2:active {
+    border: 3px solid rgb(67, 67, 67);
+    height: 48pt;
+    width: 148pt;
 }

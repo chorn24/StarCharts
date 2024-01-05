@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="Bruh">
+<a href="{% url "CHARTS_D" %}"><button class="HomeButton1">Back</button></a>
+<a href="{% url "ADD_P" %}"><button class="HomeButton1">Document Planet</button></a>
+</div>
+<div class="Wrap">
+{% for I in test %}
+<div class="TextBubble4">
+    <h2>{{I.name}}</h2>
+    <div class="Flex">
+        <p>Habitat Rating: </p>
+        {% if I.habitat_rating >= 6 %}
+        <p class="GoodRating"> {{I.habitat_rating}}</p>
+        {% elif I.habitat_rating >= 4 %}
+        <p class="OkRating"> {{I.habitat_rating}}</p>
+        {% else %}
+        <p class="BadRating"> {{I.habitat_rating}}</p>
+        {% endif %}   
+    </div>
+    <div class="Flex">
+    <p>{{I.description}}</p>
+    </div>
+    <div class="Flex">
+    <p>In the: {{I.system}}</p>
+    </div>
+    <p>Documented by: {{I.documented_by}}</p>
+</div>
+{% endfor %}
+</div>
+{% endblock content %}

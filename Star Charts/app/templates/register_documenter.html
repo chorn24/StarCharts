@@ -4,7 +4,7 @@
                 <div class="TextBubble2">
                     <br>
                     <div class="HomeDiv">
-                        <a href="{% url "Front" %}"><button class="HomeButton">Home</button></a>
+                        <a href="{% url "Front" %}"><button class="HomeButton">Back</button></a>
                     </div>
                     <h3>Documenter Sign Up</h3>
                     <form method="POST" action="{% url "REGISTER_DOCUMENTER" %}">
@@ -12,14 +12,16 @@
                     <h4>Name:<h4>
                     {% render_field form.username class="Input_" %}
                     <h4>Password:<h4>
-                        <p>Password must be 8 characters or more and cant be entirely numbers</p>
                     {% render_field form.password1 class="Input_" %}
+                    <h5>Password must be 8 characters or more and cant be entirely numbers</h5>
+                    <h5>Password must be uncommon</h5>
+                    <h5>Password must be not be similar to other information</h5>
                     <h4>Repeat Password:<h4>
                     {% render_field form.password2 class="Input_" %}
                     <br><br>
                     <input type="submit" name="CreateUser">
                     {% if form.errors %}
-                    <p>Password and Repeat Password do not match!</p>
+                    <p>Password and Repeat Password do not match or password not strong enough!</p>
                     {% endif %}
                     
                     </form>

@@ -2,11 +2,13 @@
 {% block content %}
                 <div class="TextBubble2-No_Align">
                     <div class="testing">
-                        <h4>Welcome, {{request.user}}!</h4>
-                        <text><a>Sign out?</a></text>
+                        <text><a href="{% url "LOGOUT" %}" class="LogoutLink">Sign out?</a></text>
                     </div>
-                    <div class="Center-Align">
-                    <p>testing!!</p>
+                    <div class="Center-Align"><h1>Welcome, {{request.user}}!</h1></div>
+                    <div class="Divorce">
+                    <a href="{% url "VIEW_P" %}"><Button class="LogReg_Buttons2">View Planets</button></a>
+                    <a href="{% url "VIEW_S" %}"><button class="LogReg_Buttons2">View Systems</button></a>
                     </div>
+                    <br><br><br>
                 </div>
 {% endblock content %}

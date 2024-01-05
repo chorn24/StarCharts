@@ -11,4 +11,10 @@ class CreateUserForm(UserCreationForm):
         fields = ['username','password1','password2']
 
 
+class CreatePlanetForm(ModelForm):
+    class Meta:
+        model = PlanetChart
+        fields = ['name','habitat_rating','description','system',]
+
+
 

@@ -22,8 +22,14 @@ from app.views import *
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("",front_page,name="Front"),
-    path("register/documenter",Register_documenter,name="REGISTER_DOCUMENTER"),
-    path("login/documenter",Login_documenter,name="LOGIN_DOCUMENTER"),
+    path("register",Register_documenter,name="REGISTER_DOCUMENTER"),
+    path("login",Login_documenter,name="LOGIN_DOCUMENTER"),
     path("charts/directory",Chart_D,name="CHARTS_D"),
-    path("logout",logout_user,name="LOGOUT")
+    path("logout",logout_user,name="LOGOUT"),
+    path("view/planets", view_planets, name="VIEW_P"),
+    path("view/systems", view_systems, name="VIEW_S"),
+    path("add/planets", add_planets, name="ADD_P"),
+    path("add/systems", add_systems, name="ADD_S"),
+    path("edit/planets", edit_planets, name="EDIT_P"),
+    path("edit/systems", edit_systems, name="EDIT_S")
 ]
