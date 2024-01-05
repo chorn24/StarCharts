@@ -8,13 +8,15 @@ from .models import *
 class CreateUserForm(UserCreationForm):
     class Meta:
         model = User
-        fields = ['username','password1','password2']
+        fields = ["username", "password1", "password2"]
 
 
 class CreatePlanetForm(ModelForm):
     class Meta:
         model = PlanetChart
-        fields = ['name','habitat_rating','description','system',]
+        fields = ["name", "habitat_rating", "description", "system", "documented_by"]
 
-
-
+class CreateSystemForm(ModelForm):
+    class Meta:
+        model = SystemChart
+        fields = ["name","planet_amount","documented_by"]

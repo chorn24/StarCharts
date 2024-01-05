@@ -10,9 +10,9 @@
     <h2>{{I.name}}</h2>
     <div class="Flex">
         <p>Habitat Rating: </p>
-        {% if I.habitat_rating >= 6 %}
+        {% if I.habitat_rating == '6' or I.habitat_rating == '7' or I.habitat_rating == '8' or I.habitat_rating == '9' or I.habitat_rating == '10' %}
         <p class="GoodRating"> {{I.habitat_rating}}</p>
-        {% elif I.habitat_rating >= 4 %}
+        {% elif I.habitat_rating == '5' or I.habitat_rating == '4' %}
         <p class="OkRating"> {{I.habitat_rating}}</p>
         {% else %}
         <p class="BadRating"> {{I.habitat_rating}}</p>

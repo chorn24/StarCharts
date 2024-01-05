@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="Bruh">
+<a href="{% url "CHARTS_D" %}"><button class="HomeButton1">Back</button></a>
+<a href="{% url "ADD_S" %}"><button class="HomeButton1">Document System</button></a>
+</div>
+<div class="Wrap">
+{% for I in test %}
+<div class="TextBubble4">
+    <h2>{{I.name}}</h2>
+    <div class="Flex">
+        <h2>{{I.planet_amount}}</h2>
+    </div>
+    <div class="Flex">
+    <p>Documented by: {{I.documented_by}}</p>
+    </div>
+</div>
+{% endfor %}
+</div>
+{% endblock content %}
