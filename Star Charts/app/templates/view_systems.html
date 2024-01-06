@@ -7,9 +7,15 @@
 <div class="Wrap">
 {% for I in test %}
 <div class="TextBubble4">
-    <h2>{{I.name}}</h2>
+    <h2>The {{I.name}} System</h2>
     <div class="Flex">
-        <h2>{{I.planet_amount}}</h2>
+    <p>Planet Amount: {{I.planet_amount}}</p>
+    </div>
+    <div class="Flex">
+    <p>Star's Name: {{I.star_name}}</p>
+    </div>
+    <div class="Flex">
+        <p>Stars Type: {{I.star_type}}</p>
     </div>
     <div class="Flex">
     <p>Documented by: {{I.documented_by}}</p>

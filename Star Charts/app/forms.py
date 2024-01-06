@@ -19,4 +19,4 @@ class CreatePlanetForm(ModelForm):
 class CreateSystemForm(ModelForm):
     class Meta:
         model = SystemChart
-        fields = ["name","planet_amount","documented_by"]
+        fields = ["name","planet_amount","star_name","star_type","documented_by"]

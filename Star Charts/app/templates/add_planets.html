@@ -2,6 +2,7 @@
 {% load widget_tweaks %}
 {% block content %}
 <div class="TextBubble2">
+    <a href="{% url "VIEW_P" %}"><button class="HomeButton1">Back</button></a>
     <h2>Document Planet</h2>
     <br>
     <form method="POST" action="{% url "ADD_P" %}">
