@@ -1,0 +1,12 @@
+{% extends "base2.html" %}
+{% load widget_tweaks %}
+{% block content %}
+<div class="TextBubble2">
+    <h2>Are you sure you want to delete {{planet.name}}</h2>
+    <a href="{% url "VIEW_P"  %}"><button class="HomeButton1">Cancel</button></a>
+    <form method="POST" action="{% url "DELETE_P" planet.id %}">
+        {% csrf_token %}
+        <input type="submit" name="Confirm" class="HomeButton1">
+    </form>
+</div>
+{% endblock content %}

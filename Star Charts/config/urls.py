@@ -30,6 +30,8 @@ urlpatterns = [
     path("view/systems", view_systems, name="VIEW_S"),
     path("add/planets", add_planets, name="ADD_P"),
     path("add/systems", add_systems, name="ADD_S"),
-    path("edit/planets", edit_planets, name="EDIT_P"),
-    path("edit/systems", edit_systems, name="EDIT_S")
+    path("edit/planets/<str:pk>", edit_planets, name="EDIT_P"),
+    path("edit/systems/<str:pk>", edit_systems, name="EDIT_S"),
+    path("delete/planets/<str:pk>", delete_planets, name="DELETE_P"),
+    path("delete/systems/<str:pk>", delete_systems, name="DELETE_S"),
 ]

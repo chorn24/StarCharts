@@ -90,11 +90,8 @@ def add_planets(request: HttpRequest) -> render:
     if request.method == "POST":
         form = CreatePlanetForm(request.POST)
         form.documented_by = request.user
-        print(form)
         if form.is_valid():
-            print(form.documented_by)
             form.save()
-            print(form.documented_by)
             return redirect("VIEW_P")
 
     context: dict = {"form": form}
@@ -114,13 +111,63 @@ def add_systems(request: HttpRequest) -> render:
     return render(request, "add_systems.html", context)
 
 
+
+
+
 @login_required(login_url="LOGIN_DOCUMENTER")
-def edit_planets(request: HttpRequest) -> render:
-    context: dict = {}
+def edit_planets(request: HttpRequest, pk) -> render:
+    planet = PlanetChart.objects.get(id=pk)
+    form = CreatePlanetForm(instance=planet, initial={"documented_by": request.user})
+    print("Hello from edit planets view")
+    if request.method == "POST":
+        form = CreatePlanetForm(request.POST, instance=planet)
+        print("Can you see me?")
+        if form.is_valid():
+            print("HELLO!!")
+            form.save()
+            return redirect("VIEW_P")
+    
+    context: dict = {"form":form}
     return render(request, "edit_planets.html", context)
 
 
+
+
 @login_required(login_url="LOGIN_DOCUMENTER")
-def edit_systems(request: HttpRequest) -> render:
-    context: dict = {}
+def edit_systems(request: HttpRequest, pk) -> render:
+    system = SystemChart.objects.get(id=pk)
+    form = CreateSystemForm(instance=system,initial={"documented_by": request.user})
+    if request.method == "POST":
+        form = CreateSystemForm(request.POST, instance=system)
+        if form.is_valid():
+            form.save()
+            return redirect("VIEW_S")
+    context: dict = {"form":form}
     return render(request, "edit_systems.html", context)
+
+
+
+
+@login_required(login_url="LOGIN_DOCUMENTER")
+def delete_planets(request: HttpRequest, pk) -> render:
+    planet = PlanetChart.objects.get(id=pk)
+    if request.method == 'POST':
+        planet.delete()
+        return redirect("VIEW_P")
+
+
+    context: dict = {"planet":planet}
+    return render(request, "delete_planets.html", context)
+
+
+
+@login_required(login_url="LOGIN_DOCUMENTER")
+def delete_systems(request: HttpRequest, pk) -> render:
+    system = SystemChart.objects.get(id=pk)
+    if request.method == 'POST':
+        system.delete()
+        return redirect("VIEW_S")
+    
+    context: dict = {"system":system}
+    return render(request, "delete_systems.html", context)
+

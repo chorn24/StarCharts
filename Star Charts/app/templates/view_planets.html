@@ -24,7 +24,17 @@
     <div class="Flex">
     <p>In the: {{I.system}}</p>
     </div>
+    <div class="Flex">
     <p>Documented by: {{I.documented_by}}</p>
+    </div>
+    {% if request.user.username == I.documented_by %}
+    <div class="Flex"> 
+    <a href="{% url "EDIT_P" I.id %}"><button class="HomeButton1">Edit</button></a>
+    </div>
+    <div class="Flex">
+        <a href="{% url "DELETE_P" I.id %}"><button class="HomeButton1">Delete</button></a>
+    </div>
+    {% endif %}
 </div>
 {% endfor %}
 </div>

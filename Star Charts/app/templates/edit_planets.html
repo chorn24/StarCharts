@@ -1,0 +1,26 @@
+{% extends "base2.html" %}
+{% load widget_tweaks %}
+{% block content %}
+<div class="TextBubble2">
+    <a href="{% url "VIEW_P" %}"><button class="HomeButton1">Back</button></a>
+    <h2>Edit Planet</h2>
+    <br>
+    <form method="POST" action="">
+        {% csrf_token %}
+        <h3>Planet Name:</h3>
+        {% render_field form.name class="Input_" %}
+        <h3>Habitat Rating:</h3>
+        {% render_field form.habitat_rating class="Input_" %}
+        <h3>Description:</h3>
+        {% render_field form.description class="Input_" %}
+        <h3>System:</h3>
+        {% render_field form.system class="Input_" %}
+        <div style="display: none;">
+            {{form.documented_by}}
+        </div>
+        <br><br>
+    <input type="submit">
+    </form>
+    <br>
+</div>
+{% endblock content %}
